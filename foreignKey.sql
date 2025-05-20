@@ -40,3 +40,13 @@ INSERT INTO post (title, user_id) VALUES
 
 SELECT title, user_name FROM post JOIN "user"
 ON post.user_id = "user".id
+
+--left join
+
+SELECT title, user_name FROM post LEFT JOIN "user"
+ON post.user_id = "user".id
+
+--full join
+
+SELECT title, user_name FROM post FULL JOIN "user"
+ON post.user_id = "user".id
